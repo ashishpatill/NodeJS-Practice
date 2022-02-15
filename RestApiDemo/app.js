@@ -11,7 +11,7 @@ app.use(bodyparser.json());
 app.use('/student', studentRoute)
 app.use('/faculty', facultyRoute)
 
-mongoose.connect('mongodb+srv://buildtech:anarchy99@cluster0.m4ibu.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://<username>:<password>@cluster0.m4ibu.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
 mongoose.connection.on('error', err => {
     console.log('connection failed')
 })
